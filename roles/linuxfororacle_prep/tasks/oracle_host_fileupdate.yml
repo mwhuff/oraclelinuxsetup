@@ -13,4 +13,4 @@
     state: present
     backup: yes
   register: etchostsupdate
-  with_items: "{{groups['opsdevt']}}"
+  with_items: "{{groups['dbservers_19c']}}"
