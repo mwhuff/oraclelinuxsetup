@@ -3,7 +3,7 @@
 #         Create OS Groups for Oracle Software Installation
 # ------------------------------------------------------------------
 - name: Create groups
-  when: inventory_hostname in groups['opsdevt']
+  when: inventory_hostname in groups['dbservers_19c']
   group: name="{{ item.group }} {{ item.name}}" gid="{{ item.group }} {{ item.gid}}" 
   with_items:
     - { group: 'install_group', name: oinstall, gid: '54321'}
