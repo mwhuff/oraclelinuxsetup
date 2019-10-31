@@ -3,7 +3,7 @@
 #        Create required directories
 # ----------------------------------------------------
 - name: create required directories
-  when: inventory_hostname in groups['opsdevt']
+  when: inventory_hostname in groups['dbservers_19c']
   file:
     path="{{ item }}"
     state=directory
