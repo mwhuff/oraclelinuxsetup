@@ -29,7 +29,7 @@
     with_items:
       - "{{ groups['opsdevt'] }}"
 
-  when: inventory_hostname in groups['opsdevt']
+  when: inventory_hostname in groups['dbservers_19c]
   become:               yes
   become_user:          oracle
 
