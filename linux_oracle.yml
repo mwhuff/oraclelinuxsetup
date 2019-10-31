@@ -1,4 +1,4 @@
-- hosts: opsdev
+- hosts: mh-oracleDB2
   user: root
  
   roles:
