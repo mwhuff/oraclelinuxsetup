@@ -1,4 +1,4 @@
-- hosts: mh-oracleDB2
+- hosts: dbservers_19c
   user: root
  
   roles:
